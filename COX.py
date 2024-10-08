@@ -734,45 +734,38 @@ class instagram:
 			self.Exit()
 		else:
 			self.menu()
-def make_get_request(url):
-    try:
-        requests.get('https://github.com/HAMZA-GHANIZADA')
-    except requests.exceptions.ConnectionError:
-        exit(' Connection Error! ')
-    try:
-        result = subprocess.run(["curl", url], capture_output=True, text=True, check=True)
-        response = result.stdout
-        return (response)
-    except subprocess.CalledProcessError as e:
-        exit(' Connection Error! ')
-    else:
-        pass
-        
-def approval():
-	os.system('clear')
+def Line():
+	clear()
 	banner()
-	plat = platform.version()[14:][:21][::-1].upper()+platform.release()[5:][::-1].upper()+platform.version()[:8]
-	key = "CHIGOZIE-"+plat.replace(' ', '').replace('-', '').replace('#', '').replace(':', '').replace('.', '').replace(')', '').replace('(', '').replace('?', '').replace('=', '').replace('+', '').replace(';', '').replace('*', '').replace('_', '').replace('?', '').replace('  ', '').replace("SMPP","").replace("YT","")
-	global key1
+	print("\033[1;97m[+] LICENSE KEY NOT APPROVED")
+	print('\r[+] PREMIUM STATUS\n')
+	h1=os.getuid()
+	h2=os.getlogin()
+	id = "-".join(h2)
+	basex=(f"{h1}-{h2}")
+	linex()
+	print("\033[1;97m[+] YOUR KEY : \033[0;92m%s"%(id))
 	try:
-		uri = str(zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7/J\xcd+)\xaa\xd4K\xce\xd7w\x8e\x0c\xf1\xf0\xf73\x04\x00w\xb1\x08\xa5')).replace("b'","").replace("'","")
-		response = make_get_request(uri)
-		if key+'|'+key1 in response:
-			print("\033[1;97m[+] Congratulations Your Key Has Been Approved \n")
-			time.sleep(0)
-			Main_()
+		xn = zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7/J\xcd+)\xaa\xd4K\xce\xd7w\x8e\x0c\xf1\xf0\xf73\x04\x00w\xb1\x08\xa5')
+		TIME = requests.get(xn).text
+		if id in TIME:
+			print("\033[1;97m[+] LICENSED KEY APPROVED SUCCESSFULLY")
+			msg=os.getuid()
+			#time.sleep(1)
 			pass
 		else:
-			print(70*'-')
-			print("\033[1;97m[+] FUCK YOUR BYPASS SYSTEM ")
-			print(70*'-')
-			print("\033[1;91m[+] Your Key \033[1;37m : \033[1;32m"+key+'|'+key1)
-			print(70*'-')
-			exit()
-			time.sleep(0)
-		approval()
-	except Exception as x:
+			print("\x1b[1;97m[+] SEND YOUR KEY TO AUTHOR")  
+			print("\x1b[1;97m[+] FUCK YOUR BYPASSED SYSTEM")
+			linex()
+			os.system('am start https://wa.me/+2348069472717?text=Hi+CHIGOZIEWORLDWIDE+I+WANT+TO+PAY+FOR+IG+LICENSE:+'+id+'>/dev/null')
+			time.sleep(1)
+			sys.exit()
+	except:
 		sys.exit()
+#	if __main__=='__name__':
+#		Line()
+
+Line()
 
 if __name__=='__main__':
 	ses=requests.Session()
@@ -782,4 +775,4 @@ if __name__=='__main__':
 	except:pass
 	try:os.remove('.logCrack')
 	except:pass
-	approval()
+	Main_()
