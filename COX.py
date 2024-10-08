@@ -244,7 +244,7 @@ class instagram:
 ║ Creator  : CHIGOZIEWORLDWIDE             ║
 ║ Github   : CHIG0ZIEWORLDWIDE             ║
 ║ WhatsApp : +2348069472717                ║
-║ Version  : 11.0                          ║
+║ Version  : 12.0                          ║
 ║ FILENAME : COX                           ║
 ╚══════════════════════════════════════════╝ 
 
